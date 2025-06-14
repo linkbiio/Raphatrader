@@ -7,50 +7,25 @@
   <meta name="description" content="Raphaela - Trader profissional de opções binárias. Acesse todos os meus links aqui.">
   <meta property="og:image" content="imagens/foto-topo.jpg">
   <meta property="og:title" content="Rapha Trader | Trader Profissional">
-
+  
   <style>
-    /* Fundo galáxia */
     body {
       margin: 0;
       padding: 30px 20px;
       font-family: Arial, sans-serif;
-      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-      overflow: hidden;
+      background: linear-gradient(135deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: #fff;
       text-align: center;
     }
 
-    .stars, .stars2, .stars3 {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-repeat: repeat;
-      z-index: -1;
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
-    .stars {
-      background-image: url('https://raw.githubusercontent.com/raphamorim/amaral-assets/master/stars.png');
-      animation: moveStars 200s linear infinite;
-    }
-
-    .stars2 {
-      background-image: url('https://raw.githubusercontent.com/raphamorim/amaral-assets/master/stars2.png');
-      animation: moveStars 300s linear infinite;
-    }
-
-    .stars3 {
-      background-image: url('https://raw.githubusercontent.com/raphamorim/amaral-assets/master/stars3.png');
-      animation: moveStars 500s linear infinite;
-    }
-
-    @keyframes moveStars {
-      from { background-position: 0 0; }
-      to { background-position: 10000px 5000px; }
-    }
-
-    /* Conteúdo */
     .container {
       max-width: 520px;
       margin: auto;
@@ -63,19 +38,19 @@
       object-fit: cover;
       display: block;
       margin: 0 auto 20px;
-      box-shadow: 0 0 15px #ffffff80;
+      box-shadow: 0 0 15px #cccccc80;
     }
 
     .titulo {
       font-size: 2.5rem;
       font-weight: bold;
-      color: #fdfdfd;
+      color: #ccc;
       margin-bottom: 10px;
     }
 
     .subtitulo {
       font-size: 1.2rem;
-      color: #f9f9f9;
+      color: #eee;
       margin-bottom: 40px;
       line-height: 1.5;
     }
@@ -87,9 +62,9 @@
       margin: 22px auto;
       border-radius: 30px;
       overflow: hidden;
-      border: 2px solid #ffffffcc;
+      border: 2px solid #ccc;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 15px #ffffffaa;
+      box-shadow: 0 0 15px #ccccccaa;
       opacity: 0;
       transform: translateY(20px);
       animation: fadeIn 0.8s ease-out forwards;
@@ -97,7 +72,7 @@
 
     .botao-imagem:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px #ffffffaa;
+      box-shadow: 0 0 25px #ccccccaa;
     }
 
     .botao-imagem img {
@@ -116,7 +91,7 @@
     footer {
       margin-top: 50px;
       font-size: 0.85rem;
-      color: #fdfdfd;
+      color: #ddd;
     }
 
     @media (min-width: 768px) {
@@ -130,14 +105,8 @@
 
 </head>
 <body>
-
-  <!-- Fundo Galáxia -->
-  <div class="stars"></div>
-  <div class="stars2"></div>
-  <div class="stars3"></div>
-
   <div class="container">
-    <img src="imagens/minhafoto.png" alt="Rapha Trader" class="imagem-topo" style="animation-delay: 0.2s;" />
+    <img src="imagens/minhafoto.png" alt="Arthur Martins" class="imagem-topo" style="animation-delay: 0.2s;" />
 
     <div class="subtitulo" style="animation-delay: 0.6s;">
       Que tal lucrar diariamente com quem entende do mercado? 🔽 Veja mais
